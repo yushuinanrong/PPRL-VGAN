@@ -8,7 +8,7 @@ Implementation of ["VGAN-Based Image Representation Learning for Privacy-Preserv
 4) [MUG facial expression database](https://mug.ee.auth.gr/fed/)
 
 # Usage
-First download both datasets from the offical sources. Then, read and save the data into ".mat" or ".hdf5" files.
+First download both datasets from the offical sources. Then, reduce the video resolution to 64x64x3, and save the data into ".mat" or ".hdf5" files.
 In our experiments, we used 85% data for training and 15% data for testing. You can decide your own training/testing ratio.
 
 
