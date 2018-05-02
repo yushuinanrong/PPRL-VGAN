@@ -438,13 +438,13 @@ def train_for_n(nb_epoch=50000, plt_frq=25, BATCH_SIZE=256):
             decoder.save('decoder_weights.h5')
             discriminator.save('disc_weights.h5')
 
-            # np.savez('./dataset/stats-' + str(date) + '_' + str(bc) + '-VAEGAN_MUG_12th_8pp.npz', Dist_loss,
+            # np.savez('./dataset/stats-' + str(date) + '_' + str(bc) + '-blabla.npz', Dist_loss,
             #          Dist_bin_loss, Dist_id_loss, Dist_exp_loss, Dist_bin_acc, Dist_id_acc, Dist_exp_acc, GAN_loss,
             #          GAN_KL_loss, GAN_bin_loss, GAN_id_loss, GAN_exp_loss, GAN_bin_acc, GAN_id_acc, GAN_exp_acc,
             #          val_bin_acc, val_id_acc, val_ep_acc)
 
 start_time = time.time()
-path = "/media/vivo/New Volume/GAN_rep_results/GAN_MUG/VAEGAN/generated/12th_8pp" + '_' + str(date)
+path = "/your_path_" + '_' + str(date)
 
 if os.path.isdir(path) == False:
     os.mkdir(path);
