@@ -15,7 +15,7 @@ In our experiments, we used 85% of the frames in each video for training and the
 ```python
 python train.py
 ```
-**Evaluation of the identification and expression recognition performance**
+**Evaluation of identification (privacy) and expression recognition (utility) performance**
 ```python
 python Privacy_vs_Utility_check.py
 ```
