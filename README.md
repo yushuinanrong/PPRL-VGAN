@@ -28,4 +28,4 @@ python img_applications.py
 
 # Project webpage
 
-coming soon...
+http://vip.bu.edu/projects/vsns/privacy-smartroom/facial-expression-vgan/
