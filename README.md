@@ -20,7 +20,7 @@ python train.py
 python Privacy_vs_Utility_check.py
 ```
 
-**Image processing applications(e.g., expression morphing)**
+**Image processing applications (e.g., expression morphing)**
 
 ```python
 python img_applications.py
