@@ -9,7 +9,7 @@ Implementation of ["VGAN-Based Image Representation Learning for Privacy-Preserv
 
 # Usage
 First download both datasets from the offical sources. Then, reduce the video resolution to 64x64x3, and save the data into ".mat" or ".hdf5" files.
-In our experiments, we used 85% of the frames in each video for training and the rest frames for testing. You can decide your own training/testing ratio.
+In our experiments, we randomly chose 85% of the frames in each video for training and the rest frames for testing. You can decide your own training/testing ratio.
 
 **Training**
 ```python
