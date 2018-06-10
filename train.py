@@ -340,19 +340,19 @@ def train_for_n(nb_epoch=50000, plt_frq=25, BATCH_SIZE=256):
 
 
         if ee % 25 == 0:
-            GAN.save('/media/vivo/New Volume/FERG_DB_256/model/VAEGAN_5th_MUG_8pp_real_' + str(date) + 'epochs' + str(
+            GAN.save('/VAEGAN_real_' + str(date) + 'epochs' + str(
                 ee) + '.h5')
-            encoder.save('/media/vivo/New Volume/FERG_DB_256/model/VAEGAN_5th_encoder_MUG_8pp_real_' + str(
+            encoder.save('/encoder_MUG_8pp_real_' + str(
                 date) + 'epochs' + str(ee) + '.h5')
-            decoder.save('/media/vivo/New Volume/FERG_DB_256/model/VAEGAN_5th_decoder_MUG_8pp_real_' + str(
+            decoder.save('/decoder_MUG_8pp_real_' + str(
                 date) + 'epochs' + str(ee) + '.h5')
-            discriminator.save('/media/vivo/New Volume/FERG_DB_256/model/VAEGAN_5th_discriminator_MUG_8pp_real_' + str(
+            discriminator.save('/discriminator_MUG_8pp_real_' + str(
                 date) + 'epochs' + str(ee) + '.h5')
 
 
 
 start_time = time.time()
-path = "/media/vivo/New Volume/GAN_rep_results/GAN_MUG/VAEGAN/generated/5th_8pp_" + str(date)
+path = "/path_" + str(date)
 if os.path.isdir(path) == False:
     os.mkdir(path);
 
