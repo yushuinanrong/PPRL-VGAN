@@ -191,7 +191,7 @@ discriminator.add_loss(loss)
 discriminator.compile( optimizer=dopt, loss = None)
 discriminator.summary()
 print (discriminator.metrics_names)
-plot_model(discriminator, to_file = '/media/vivo/New Volume/FERG_DB_256/stats/disc_0605_model.png')
+#plot_model(discriminator, to_file = '/media/vivo/New Volume/FERG_DB_256/stats/disc_0605_model.png')
 
 def make_trainable(net, val):
     net.trainable = val
@@ -208,18 +208,18 @@ units = 256
 GANloss_weights_vae = Input(shape = (1,))
 GANtargets_vae  = Input(shape = (z_dim*2,))
 
-ee = 100
+#ee = 100
 
 auxiliary_c = Input(shape=(c_dim,), name='aux_input_c')
 encoder = model_encoder(z_dim=z_dim, input_shape=(img_rows, img_cols, 3), units=units, dropout=0.3)
 # encoder.load_weights('/media/vivo/New Volume/FERG_DB_256/model/VAEGAN_5th_encoder_MUG_8pp_real_' + str(date)+'epochs'+str(ee)+ '.h5')
-# encoder.compile(loss='binary_crossentropy', optimizer=opt)
-# encoder.summary()
+encoder.compile(loss='binary_crossentropy', optimizer=opt)
+encoder.summary()
 
 decoder = model_decoder(z_dim=z_dim, c_dim=c_dim)
 # decoder.load_weights('/media/vivo/New Volume/FERG_DB_256/model/VAEGAN_5th_decoder_MUG_8pp_real_' + str(date)+'epochs'+str(ee)+ '.h5')
-# decoder.compile(loss='binary_crossentropy', optimizer=opt)
-# decoder.summary()
+decoder.compile(loss='binary_crossentropy', optimizer=opt)
+decoder.summary()
 
 ### Generate Image set ###
 # generate_dataset(ee=ee)
